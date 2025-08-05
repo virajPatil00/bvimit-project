@@ -1,0 +1,76 @@
+name: campus_connect
+description: A mobile-based centralized event aggregator for college communities
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Navigation
+  cupertino_icons: ^1.0.2
+  go_router: ^12.1.3
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Networking & Data
+  http: ^1.1.0
+  dio: ^5.3.3
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # Authentication
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  firebase_messaging: ^14.7.10
+  cloud_firestore: ^4.13.6
+  google_sign_in: ^6.1.6
+  
+  # Image & QR Code
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  
+  # Date & Time
+  intl: ^0.18.1
+  
+  # Maps & Location
+  geolocator: ^10.1.0
+  permission_handler: ^11.1.0
+  
+  # Utilities
+  uuid: ^4.2.1
+  url_launcher: ^6.2.1
+  share_plus: ^7.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
